@@ -1,0 +1,33 @@
+{
+  "name": "space",
+  "version": "1.0.0",
+  "description": "Multiplayer game using websockets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maldrotic/Space.git"
+  },
+  "author": "ryan.gahart@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maldrotic/Space/issues"
+  },
+  "homepage": "https://github.com/Maldrotic/Space#readme"
+}
