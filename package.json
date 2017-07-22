@@ -4,12 +4,17 @@
   "description": "Multiplayer game using websockets.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon lib/index.js --exec babel-node",
-    "build": "babel lib -d dist",
-    "serve": "node dist/index.js",
+    "start": "nodemon src/server.js --exec babel-node",
+    "build": "babel src -d dist --copy-files",
+    "serve": "node dist/server.js",
     "test": "mocha --compilers js:babel-register"
   },
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
