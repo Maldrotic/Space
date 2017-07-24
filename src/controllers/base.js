@@ -1,7 +1,5 @@
 import express from 'express';
 
-import Universe from '../controllers/universe.js';
-
 let router = express.Router();
 
 router.get('/', (req, res) => {

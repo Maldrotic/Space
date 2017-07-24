@@ -13,7 +13,25 @@ body {
 }
 
 #content #left-column {
-    flex: 1 1 auto;
+    flex: 1 1 0px;
+    display: flex;
+    flex-flow: column;
+}
+
+#content #left-column #universe-content {
+    /*margin-left: 2rem;*/
+    text-align: center;
+    overflow: auto;
+}
+
+.galaxy-text {
+    padding: 0;
+    margin: 0;
+}
+
+.star-text {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -49,12 +67,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0));
+    background: linear-gradient(rgba(255,255,255,1) 25%, rgba(255,255,255,0));
 }
 
 
 #content #right-column {
-    flex: 1 1 auto;
+    flex: 1 1 0px;
 }
 
 
